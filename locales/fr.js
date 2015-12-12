@@ -1,0 +1,3 @@
+{
+  "plugin.timer.description" : "Minuteur"
+}

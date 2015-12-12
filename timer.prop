@@ -1,0 +1,10 @@
+{
+  "modules" : { 
+    "timer":     {
+      "description": "Minuteur",
+      "version"    : "1.0",
+	  "Sound" : "rencontre_du_troisieme_type",
+	  "addspeech" : true
+    }
+  }
+}

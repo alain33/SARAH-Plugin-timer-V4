@@ -1,0 +1,31 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleTimer" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  
+  <rule id="ruleTimer" scope="public">
+    <example>démarre un taïmeur</example>
+    
+	<tag>out.action=new Object();</tag>
+   <item>Sarah</item>
+  
+	<one-of>
+		<!-- Lazy pour donner un temps de minuterie, dire "marci sarah c'est tout" après -->
+		<item>démarre un taïmeur<tag>out.action.command="setTimer";out.action._attributes.tts="je t'écoute"</tag></item>
+		<item>démarre un minuteur<tag>out.action.command="setTimer";out.action._attributes.tts="je t'écoute"</tag></item>
+		
+		<!-- Stop le timer en cours -->
+		<item>stop le taïmeur<tag>out.action.command="stopTimer"</tag></item>
+		
+		<!-- Timer direct avec un temps défini, exemple pour un oeuf dur=10 minutes -->
+		<item>démarre un taïmeur pour un oeuf dur<tag>out.action.command="startTimer";out.action.time="00:10:00"</tag></item>
+		<item>démarre un taïmeur pour un oeuf à la coque<tag>out.action.command="startTimer";out.action.time="00:03:00"</tag></item>
+		<item>démarre un taïmeur pour un oeuf mollet<tag>out.action.command="startTimer";out.action.time="00:06:00"</tag></item>
+		<item>démarre un taïmeur pour les frites<tag>out.action.command="startTimer";out.action.time="00:12:30"</tag></item>
+		<item>démarre un taïmeur pour les pates<tag>out.action.command="startTimer";out.action.time="00:13:00"</tag></item>
+		<item>démarre un taïmeur pour les croque mosieur<tag>out.action.command="startTimer";out.action.time="00:10:00"</tag></item>
+		<item>démarre un taïmeur pour le riz<tag>out.action.command="startTimer";out.action.time="00:15:00"</tag></item>
+		
+	</one-of>
+	
+	 <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/timer"</tag>
+ 
+  </rule>
+</grammar>

@@ -1,0 +1,78 @@
+<%- layout('/layout/modal.ejs') -%>
+	 	 
+Développé pour Sarah V 4.X <br>
+Author: Stéphane Bascher <br>
+Versions (voir le readme pour les infos des versions): <br>
+1.0 - 12/12/2015 <br>
+
+<h3>2 minuteries possibles</h3>
+<ul>
+	<li>En donnant précisément le temps de minuterie.</li>
+	<ul>
+		<li>Le temps doit être défini entre 10 secondes et 24 heures cinquante neuf minutes cinquante neuf secondes</li>
+	</ul>
+	<li>En disant une règle avec un temps de minuterie défini.</li>
+</ul>
+
+<b>Dialogue de temps de minuterie</b>
+<ul>
+	<li><code>Vous</code>Sarah démarre un timer</li>
+	<li><code>Sarah</code>Je t'écoute</li>
+	<li><code>Vous</code>3 minutes 25 secondes</li>
+	<li><code>Sarah</code>Timer de 3 minutes 25 secondes démarré.</li>
+	<li><code>Vous</code>Merci sarah c'est tout.</li>
+	<li><code>Sarah</code>A ton service</li>
+</ul>
+ou autre exemple:
+<ul>
+	<li><code>Vous</code>Sarah démarre un timer</li>
+	<li><code>Sarah</code>Je t'écoute</li>
+	<li><code>Vous</code>10 minutes</li>
+	<li><code>Sarah</code>Timer de 10 minutes démarré.</li>
+	<li><code>Vous</code>Merci sarah c'est tout.</li>
+	<li><code>Sarah</code>A ton service</li>
+</ul>
+ou autre exemple:
+<ul>
+	<li><code>Vous</code>Sarah démarre un timer</li>
+	<li><code>Sarah</code>Je t'écoute</li>
+	<li><code>Vous</code>2 heures 20 minutes 30 secondes</li>
+	<li><code>Sarah</code>Timer de 2 heures 20 minutes 30 secondes démarré.</li>
+	<li><code>Vous</code>Merci sarah c'est tout.</li>
+	<li><code>Sarah</code>A ton service</li>
+</ul>
+<br>
+<b>Dialogue de temps de minuterie défini dans une règle</b><br>
+Les règles sont à ajouter dans le fichier timer.xml. Prenez exemple sur les règles existantes.<br>
+La valeur du out.action.time de la règle est exprimée en "heure:minute:seconde". <br>
+2 chiffres pour chaque valeur. Commencez par un 0 si la valeur n'a qu'un chiffre (exemple "01:01:01" pour un timer d'1 heure 1 minute 1 seconde).<br>
+<ul>
+	<li><code>Vous</code>Sarah démarre un timer pour un oeuf à la coque</li>
+	<li><code>Sarah</code>Timer de 3 minutes démarré.</li>
+</ul>
+
+ <h3>Autre règle</h3>
+ Vous pouvez annulé le timer courant par la règle suivante:
+ <ul>
+	<li><code>Vous</code>Sarah stop le timer</li>
+	<li><code>Sarah</code>timer stoppé.</li>
+</ul>
+ 
+ <b>A savoir:</b><br>
+ Le timer courant est automatiquement annulé lorsque vous définissez un nouveau timer.<br><br>
+
+<h3>Configuration</h3>
+2 propriétés peuvent être modifiées dans le timer.propriétés<br>
+<b>La propriété Sound</b><br>
+Donnez un nom de fichier mp3 (sans l'extension) qui sera joué à la fin du temps écoulé.<br>
+Le fichier doit être dans le répertoire plugin\timer\lib\sons.<br><br>
+
+<b>La propriété addspeech</b><br>
+Valeurs possibles:
+<ul>
+	<li>true</li>
+	Après la lecture de la musique, Sarah dira "Timer terminé".
+	<li>false</li>
+	Après la lecture de la musique, Sarah ne dira rien.
+</ul>
+<br><br>

@@ -1,0 +1,205 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulelazyTimer" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+	<tag>
+		timer=new Object();
+	</tag>
+	
+	 <rule id="Seconde">
+		<item repeat="0-1">
+			<one-of>
+				<item>une seconde<tag>timer.s="01";</tag></item>
+				<item>deux seconde<tag>timer.s="02";</tag></item>
+				<item>trois seconde<tag>timer.s="03";</tag></item>
+				<item>quatre seconde<tag>timer.s="04";</tag></item>
+				<item>cinq seconde<tag>timer.s="05";</tag></item>
+				<item>six seconde<tag>timer.s="06";</tag></item>
+				<item>sept seconde<tag>timer.s="07";</tag></item>
+				<item>huit seconde<tag>timer.s="08";</tag></item>
+				<item>neuf seconde<tag>timer.s="09";</tag></item>
+				<item>dix seconde<tag>timer.s="10";</tag></item>
+				<item>onze seconde<tag>timer.s="11";</tag></item>
+				<item>douze seconde<tag>timer.s="12";</tag></item>
+				<item>treize seconde<tag>timer.s="13";</tag></item>
+				<item>quatorze seconde<tag>timer.s="14";</tag></item>
+				<item>quinze seconde<tag>timer.s="15";</tag></item>
+				<item>seize seconde<tag>timer.s="16";</tag></item>
+				<item>dix sept seconde<tag>timer.s="17";</tag></item>
+				<item>dix huit seconde<tag>timer.s="18";</tag></item>
+				<item>dix neuf seconde<tag>timer.s="19";</tag></item>
+				<item>vingt seconde<tag>timer.s="20";</tag></item>
+				<item>vingt et une seconde<tag>timer.s="21";</tag></item>
+				<item>vingt deux seconde<tag>timer.s="22";</tag></item>
+				<item>vingt trois seconde<tag>timer.s="23";</tag></item>
+				<item>vingt quatre seconde<tag>timer.s="24";</tag></item>
+				<item>vingt cinq seconde<tag>timer.s="25";</tag></item>
+				<item>vingt six seconde<tag>timer.s="26";</tag></item>
+				<item>vingt sept seconde<tag>timer.s="27";</tag></item>
+				<item>vingt huit seconde<tag>timer.s="28";</tag></item>
+				<item>vingt neuf seconde<tag>timer.s="29";</tag></item>
+				<item>trente seconde<tag>timer.s="30";</tag></item>
+				<item>trente et une seconde<tag>timer.s="31";</tag></item>
+				<item>trente deux seconde<tag>timer.s="32";</tag></item>
+				<item>trente trois seconde<tag>timer.s="33";</tag></item>
+				<item>trente quatre seconde<tag>timer.s="34";</tag></item>
+				<item>trente cinq seconde<tag>timer.s="35";</tag></item>
+				<item>trente six seconde<tag>timer.s="36";</tag></item>
+				<item>trente sept seconde<tag>timer.s="37";</tag></item>
+				<item>trente huit seconde<tag>timer.s="38";</tag></item>
+				<item>trente neuf seconde<tag>timer.s="39";</tag></item>
+				<item>quarante seconde<tag>timer.s="40";</tag></item>
+				<item>quarante et une seconde<tag>timer.s="41";</tag></item>
+				<item>quarante deux seconde<tag>timer.s="42";</tag></item>
+				<item>quarante trois seconde<tag>timer.s="43";</tag></item>
+				<item>quarante quatre seconde<tag>timer.s="44";</tag></item>
+				<item>quarante cinq seconde<tag>timer.s="45";</tag></item>
+				<item>quarante six seconde<tag>timer.s="46";</tag></item>
+				<item>quarante sept seconde<tag>timer.s="47";</tag></item>
+				<item>quarante huit seconde<tag>timer.s="48";</tag></item>
+				<item>quarante neuf seconde<tag>timer.s="49";</tag></item>
+				<item>cinquante seconde<tag>timer.s="50";</tag></item>
+				<item>cinquante et une seconde<tag>timer.s="51";</tag></item>
+				<item>cinquante deux seconde<tag>timer.s="52";</tag></item>
+				<item>cinquante trois seconde<tag>timer.s="53";</tag></item>
+				<item>cinquante quatre seconde<tag>timer.s="54";</tag></item>
+				<item>cinquante cinq seconde<tag>timer.s="55";</tag></item>
+				<item>cinquante six seconde<tag>timer.s="56";</tag></item>
+				<item>cinquante sept seconde<tag>timer.s="57";</tag></item>
+				<item>cinquante huit seconde<tag>timer.s="58";</tag></item>
+				<item>cinquante neuf seconde<tag>timer.s="59";</tag></item>
+			</one-of>
+		</item>
+   </rule>
+	
+	 <rule id="Minute">
+		<item repeat="0-1">
+			<one-of>
+				<item>une minute<tag>timer.mn="01";</tag></item>
+				<item>deux minute<tag>timer.mn="02";</tag></item>
+				<item>trois minute<tag>timer.mn="03";</tag></item>
+				<item>quatre minute<tag>timer.mn="04";</tag></item>
+				<item>cinq minute<tag>timer.mn="05";</tag></item>
+				<item>six minute<tag>timer.mn="06";</tag></item>
+				<item>sept minute<tag>timer.mn="07";</tag></item>
+				<item>huit minute<tag>timer.mn="08";</tag></item>
+				<item>neuf minute<tag>timer.mn="09";</tag></item>
+				<item>dix minute<tag>timer.mn="10";</tag></item>
+				<item>onze minute<tag>timer.mn="11";</tag></item>
+				<item>douze minute<tag>timer.mn="12";</tag></item>
+				<item>treize minute<tag>timer.mn="13";</tag></item>
+				<item>quatorze minute<tag>timer.mn="14";</tag></item>
+				<item>quinze minute<tag>timer.mn="15";</tag></item>
+				<item>seize minute<tag>timer.mn="16";</tag></item>
+				<item>dix sept minute<tag>timer.mn="17";</tag></item>
+				<item>dix huit minute<tag>timer.mn="18";</tag></item>
+				<item>dix neuf minute<tag>timer.mn="19";</tag></item>
+				<item>vingt minute<tag>timer.mn="20";</tag></item>
+				<item>vingt et une minute<tag>timer.mn="21";</tag></item>
+				<item>vingt deux minute<tag>timer.mn="22";</tag></item>
+				<item>vingt trois minute<tag>timer.mn="23";</tag></item>
+				<item>vingt quatre minute<tag>timer.mn="24";</tag></item>
+				<item>vingt cinq minute<tag>timer.mn="25";</tag></item>
+				<item>vingt six minute<tag>timer.mn="26";</tag></item>
+				<item>vingt sept minute<tag>timer.mn="27";</tag></item>
+				<item>vingt huit minute<tag>timer.mn="28";</tag></item>
+				<item>vingt neuf minute<tag>timer.mn="29";</tag></item>
+				<item>trente minute<tag>timer.mn="30";</tag></item>
+				<item>trente et une minute<tag>timer.mn="31";</tag></item>
+				<item>trente deux minute<tag>timer.mn="32";</tag></item>
+				<item>trente trois minute<tag>timer.mn="33";</tag></item>
+				<item>trente quatre minute<tag>timer.mn="34";</tag></item>
+				<item>trente cinq minute<tag>timer.mn="35";</tag></item>
+				<item>trente six minute<tag>timer.mn="36";</tag></item>
+				<item>trente sept minute<tag>timer.mn="37";</tag></item>
+				<item>trente huit minute<tag>timer.mn="38";</tag></item>
+				<item>trente neuf minute<tag>timer.mn="39";</tag></item>
+				<item>quarante minute<tag>timer.mn="40";</tag></item>
+				<item>quarante et une minute<tag>timer.mn="41";</tag></item>
+				<item>quarante deux minute<tag>timer.mn="42";</tag></item>
+				<item>quarante trois minute<tag>timer.mn="43";</tag></item>
+				<item>quarante quatre minute<tag>timer.mn="44";</tag></item>
+				<item>quarante cinq minute<tag>timer.mn="45";</tag></item>
+				<item>quarante six minute<tag>timer.mn="46";</tag></item>
+				<item>quarante sept minute<tag>timer.mn="47";</tag></item>
+				<item>quarante huit minute<tag>timer.mn="48";</tag></item>
+				<item>quarante neuf minute<tag>timer.mn="49";</tag></item>
+				<item>cinquante minute<tag>timer.mn="50";</tag></item>
+				<item>cinquante et une minute<tag>timer.mn="51";</tag></item>
+				<item>cinquante deux minute<tag>timer.mn="52";</tag></item>
+				<item>cinquante trois minute<tag>timer.mn="53";</tag></item>
+				<item>cinquante quatre minute<tag>timer.mn="54";</tag></item>
+				<item>cinquante cinq minute<tag>timer.mn="55";</tag></item>
+				<item>cinquante six minute<tag>timer.mn="56";</tag></item>
+				<item>cinquante sept minute<tag>timer.mn="57";</tag></item>
+				<item>cinquante huit minute<tag>timer.mn="58";</tag></item>
+				<item>cinquante neuf minute<tag>timer.mn="59";</tag></item>
+			</one-of>
+		</item>
+   </rule>
+   
+   <rule id="Hour">
+		<item repeat="0-1">
+			<one-of>
+				<item>une heure<tag>timer.hour="01";</tag></item>
+				<item>deux heure<tag>test.hour="02";</tag></item>
+				<item>trois heure<tag>timer.hour="03";</tag></item>
+				<item>quatre heure<tag>timer.hour="04";</tag></item>
+				<item>cinq heure<tag>timer.hour="05";</tag></item>
+				<item>six heure<tag>timer.hour="06";</tag></item>
+				<item>sept heure<tag>timer.hour="07";</tag></item>
+				<item>huit heure<tag>timer.hour="08";</tag></item>
+				<item>neuf heure<tag>timer.hour="09";</tag></item>
+				<item>dix heure<tag>timer.hour="10";</tag></item>
+				<item>onze heure<tag>timer.hour="11";</tag></item>
+				<item>douze heure<tag>timer.hour="12";</tag></item>
+				<item>treize heure<tag>timer.hour="13";</tag></item>
+				<item>quatorze heure<tag>timer.hour="14";</tag></item>
+				<item>quinze heure<tag>timer.hour="15";</tag></item>
+				<item>seize heure<tag>timer.hour="16";</tag></item>
+				<item>dix sept heure<tag>timer.hour="17";</tag></item>
+				<item>dix huit heure<tag>timer.hour="18";</tag></item>
+				<item>dix neuf heure<tag>timer.hour="19";</tag></item>
+				<item>vingt heure<tag>timer.hour="20";</tag></item>
+				<item>vingt et une heure<tag>timer.hour="21";</tag></item>
+				<item>vingt deux heure<tag>timer.hour="22";</tag></item>
+				<item>vingt trois heure<tag>timer.hour="23";</tag></item>
+				<item>vingt quatre heure<tag>timer.hour="24";</tag></item>
+			</one-of>
+		</item>
+   </rule>
+   
+    <rule id="StartTimer">
+		<ruleref uri="#Hour"/>
+		<ruleref uri="#Minute"/>
+		<ruleref uri="#Seconde"/>
+   </rule>
+   
+   
+  
+  <rule id="rulelazyTimer" scope="public">
+  
+	 <tag>out.action=new Object();</tag>
+	 
+	<one-of>
+		<item>merci Sarah c'est tout<tag>out.action._attributes.context="default";out.action._attributes.tts="a ton service"</tag></item>
+		<item><ruleref uri="#StartTimer"/>
+			<tag>
+				if (timer.hour != undefined)
+					out.action.time = timer.hour  + ":";
+				else 
+					out.action.time = "00:";
+				if (timer.mn != undefined)
+					out.action.time = out.action.time + timer.mn + ":";
+				else 
+					out.action.time = out.action.time + "00:";
+				if (timer.s != undefined)
+					out.action.time = out.action.time + timer.s;
+				else
+					out.action.time = out.action.time + "00";
+				out.action.command="startTimer";
+			</tag>
+		</item>
+	</one-of>	
+
+	 <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/timer"</tag>
+	
+  </rule>
+</grammar>
